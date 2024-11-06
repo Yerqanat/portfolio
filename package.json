@@ -2,7 +2,7 @@
   "name": "yerhanat",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://yerqanat.github.io/yerqanat/",
+  "homepage": "https://yerqanat.github.io/portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
