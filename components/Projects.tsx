@@ -1,7 +1,7 @@
-import React from 'react';
-import SectionWrapper from './SectionWrapper';
-import { FEATURED_PROJECTS, OTHER_PROJECTS } from '../constants';
-import { Github, ExternalLink, Folder } from 'lucide-react';
+import React from "react";
+import SectionWrapper from "./SectionWrapper";
+import { FEATURED_PROJECTS, OTHER_PROJECTS } from "../constants";
+import { Github, ExternalLink, Folder } from "lucide-react";
 
 const Projects: React.FC = () => {
   return (
@@ -16,15 +16,15 @@ const Projects: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
         {FEATURED_PROJECTS.map((project) => (
-          <div 
+          <div
             key={project.id}
             className="group relative bg-white dark:bg-navy-800 rounded-lg overflow-hidden shadow-xl border border-gray-200 dark:border-navy-700 flex flex-col h-full"
           >
-            <div className="h-48 overflow-hidden relative">
+            <div className="h-56 overflow-hidden relative">
               <div className="absolute inset-0 bg-navy-900/40 group-hover:bg-transparent transition-colors duration-300 z-10" />
-              <img 
-                src={project.imageUrl} 
-                alt={project.title} 
+              <img
+                src={project.imageUrl}
+                alt={project.title}
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
               />
             </div>
@@ -36,12 +36,22 @@ const Projects: React.FC = () => {
                 </div>
                 <div className="flex gap-4 z-20">
                   {project.githubUrl && (
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-cyan-500 transition-colors">
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-500 hover:text-cyan-500 transition-colors"
+                    >
                       <Github size={20} />
                     </a>
                   )}
                   {project.liveUrl && (
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-cyan-500 transition-colors">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-500 hover:text-cyan-500 transition-colors"
+                    >
                       <ExternalLink size={20} />
                     </a>
                   )}
@@ -49,7 +59,11 @@ const Projects: React.FC = () => {
               </div>
 
               <h3 className="text-xl font-bold text-navy-900 dark:text-slate-lightest mb-2 group-hover:text-cyan-500 transition-colors">
-                <a href={project.liveUrl || '#'} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={project.liveUrl || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {project.title}
                 </a>
               </h3>
@@ -59,18 +73,25 @@ const Projects: React.FC = () => {
               </p>
 
               <div className="mb-6 flex-grow">
-                 <ul className="space-y-1">
-                    {project.features.slice(0, 3).map((feature, i) => (
-                        <li key={i} className="text-xs text-gray-500 dark:text-slate-light flex items-start">
-                             <span className="text-cyan-400 mr-2 mt-0.5">▹</span> {feature}
-                        </li>
-                    ))}
-                 </ul>
+                <ul className="space-y-1">
+                  {project.features.slice(0, 3).map((feature, i) => (
+                    <li
+                      key={i}
+                      className="text-xs text-gray-500 dark:text-slate-light flex items-start"
+                    >
+                      <span className="text-cyan-400 mr-2 mt-0.5">▹</span>{" "}
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               <div className="flex flex-wrap gap-3 mt-auto">
                 {project.techStack.map((tech) => (
-                  <span key={tech} className="text-xs font-mono text-gray-500 dark:text-slate-light">
+                  <span
+                    key={tech}
+                    className="text-xs font-mono text-gray-500 dark:text-slate-light"
+                  >
                     {tech}
                   </span>
                 ))}
@@ -89,7 +110,7 @@ const Projects: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {OTHER_PROJECTS.map((project, index) => (
-          <a 
+          <a
             key={index}
             href={project.link}
             target="_blank"
@@ -104,18 +125,21 @@ const Projects: React.FC = () => {
                 <ExternalLink size={20} />
               </div>
             </div>
-            
+
             <h4 className="text-lg font-bold text-navy-900 dark:text-slate-lightest mb-2 group-hover:text-cyan-500 transition-colors">
               {project.title}
             </h4>
-            
+
             <p className="text-sm text-gray-600 dark:text-slate-light mb-4 line-clamp-3">
               {project.description}
             </p>
-            
+
             <div className="flex flex-wrap gap-2 mt-auto">
-              {project.techStack.map(tech => (
-                <span key={tech} className="text-xs font-mono text-gray-500 dark:text-slate-light opacity-70">
+              {project.techStack.map((tech) => (
+                <span
+                  key={tech}
+                  className="text-xs font-mono text-gray-500 dark:text-slate-light opacity-70"
+                >
                   {tech}
                 </span>
               ))}
