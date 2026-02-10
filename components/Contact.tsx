@@ -107,7 +107,7 @@ const Contact: React.FC = () => {
             <Mail /> yerqanat34@gmail.com
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/yerqanat/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-gray-600 dark:text-slate-light hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"

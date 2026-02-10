@@ -189,18 +189,4 @@ export const OTHER_PROJECTS: OtherProject[] = [
     techStack: ["React", "Node.js", "Dashboard"],
     link: "https://infini-web-alpha.vercel.app/",
   },
-  {
-    title: "Hanshaiym",
-    description:
-      "Mobile-first marketing landing page optimized for high conversion on mobile devices.",
-    techStack: ["Mobile Web", "React", "Responsive"],
-    link: "https://hanshaiym.vercel.app/",
-  },
-  {
-    title: "Travel with Aqerke",
-    description:
-      "A travel agency portfolio and booking inquiry landing page designed for mobile users.",
-    techStack: ["Vite", "Mobile First", "CSS Animations"],
-    link: "https://travel-with-aqerke-aruzhan.vercel.app/",
-  },
 ];
