@@ -49,6 +49,7 @@ export const SKILL_CATEGORIES: (SkillCategory & { icon: React.ReactNode })[] = [
       "Linux / SSH",
       "REST APIs",
       "Postman",
+      "Kubernetes",
     ],
     icon: <Terminal className="w-6 h-6" />,
   },
@@ -58,8 +59,9 @@ export const SKILL_CATEGORIES: (SkillCategory & { icon: React.ReactNode })[] = [
       "PostgreSQL",
       "MongoDB",
       "MySQL",
+      "Redis",
       "Firebase Firestore",
-      "Supabase (Postgres)",
+      "Supabase",
     ],
     icon: <Database className="w-6 h-6" />,
   },
@@ -95,7 +97,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: 3,
     role: "Technical Assistant",
-    company: "IE Aqerke-Online",
+    company: "IE Erke Online",
     period: "2023 – 2024",
     responsibilities: [
       "Built a simple marketing website for the business.",
